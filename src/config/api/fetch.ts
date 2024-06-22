@@ -1,27 +1,25 @@
-import got from 'got';
-
 class Fetch {
   baseUrl: string;
   headers = {
     'Content-Type': 'application/json',
-  }
+  };
 
   constructor(baseUrl: string) {
     this.baseUrl = baseUrl;
   }
 
-  parseResponse(res: got.Response<string>) {
-    return JSON.parse(res.body);
+  parseResponse(res: Response) {
+    return res.json(); // node-fetch's Response.json() returns a promise
   }
 
   async get(endpoint: string) {
-    const response = await got(`${this.baseUrl}${endpoint}`);
+    const response = await fetch(`${this.baseUrl}${endpoint}`);
 
     return this.parseResponse(response);
   }
 
   async post(endpoint: string, body: any) {
-    const response = await got(`${this.baseUrl}${endpoint}`, {
+    const response = await fetch(`${this.baseUrl}${endpoint}`, {
       method: 'POST',
       headers: this.headers,
       body: JSON.stringify(body),
@@ -31,7 +29,7 @@ class Fetch {
   }
 
   async put(endpoint: string, body: any) {
-    const response = await got(`${this.baseUrl}${endpoint}`, {
+    const response = await fetch(`${this.baseUrl}${endpoint}`, {
       method: 'PUT',
       headers: this.headers,
       body: JSON.stringify(body),
@@ -41,7 +39,7 @@ class Fetch {
   }
 
   async delete(endpoint: string) {
-    const response = await got(`${this.baseUrl}${endpoint}`, {
+    const response = await fetch(`${this.baseUrl}${endpoint}`, {
       method: 'DELETE',
     });
 

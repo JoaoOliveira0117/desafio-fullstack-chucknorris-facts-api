@@ -1,13 +1,12 @@
 {
   "name": "desafio-fullstack-chucknorris-facts-api",
-  "type": "module",
   "version": "1.0.0",
   "description": "API for chucknorris facts frontend",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "start": "node ./dist/index.js",
     "build": "tsc",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -27,8 +26,8 @@
   },
   "dependencies": {
     "express": "^4.19.2",
-    "got": "^14.4.1",
     "http-status-codes": "^2.3.0",
+    "node-fetch": "^3.3.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
     "winston": "^3.13.0"

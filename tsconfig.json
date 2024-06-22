@@ -1,14 +1,34 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
+    "target": "ESNext",                    /* Compilar para ECMAScript mais recente possível */
+    "module": "CommonJS",                  /* Utilizar o sistema de módulos CommonJS */
+    "lib": ["ESNext", "DOM"],              /* Incluir lib ESNext e DOM para suporte completo */
+    "esModuleInterop": true,               /* Habilitar interoperabilidade de módulos ES */
+    "skipLibCheck": true,                  /* Não verificar arquivos de definição de biblioteca */
     "forceConsistentCasingInFileNames": true,
+    "strict": true,                        /* Habilitar todas as verificações estritas */
+    "noImplicitAny": true,                 /* Não permitir tipos implícitos "any" */
+    "strictNullChecks": true,              /* Habilitar verificação rigorosa para valores nulos */
+    "strictFunctionTypes": true,           /* Habilitar verificação rigorosa para tipos de função */
+    "strictPropertyInitialization": true,  /* Habilitar verificação rigorosa para inicialização de propriedades */
+    "noImplicitThis": true,                /* Não permitir que "this" seja do tipo implícito "any" */
+    "alwaysStrict": true,                  /* Emitir o 'use strict' para cada arquivo */
+    "resolveJsonModule": true,             /* Permitir importação de módulos JSON */
+    "baseUrl": "./",                       /* Base URL para resolução de módulos */
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "src/*"
+      ]
+    }
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.json"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
