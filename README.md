@@ -20,8 +20,7 @@ bun dev
 ## Requirements
 
 - [x] Use Git;
-- [ ] Use Typescript;
-- [ ] Use Tailwind;
+- [x] Use Typescript;
 - [ ] Use Graphql;
 - [ ] Deploy;
 - [x] Listen to [`The Diner - Billie Eilish` on Spotify](https://open.spotify.com/intl-pt/track/1LLUoftvmTjVNBHZoQyveF?si=1d601d0bac304eb6);
