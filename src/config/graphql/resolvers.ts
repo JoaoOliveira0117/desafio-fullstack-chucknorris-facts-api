@@ -1,5 +1,5 @@
 import schema from "./schema";
-import ChuckNorrisService from "services/chuckNorris";
+import ChuckNorrisService from "../../services/chuckNorris";
 
 const chuckNorrisService = new ChuckNorrisService();
 

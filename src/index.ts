@@ -4,7 +4,7 @@ import logger from './config/logger/winston';
 import router from './routes/index';
 import swaggerConfig from './config/docs/swagger';
 import error from './middlewares/error';
-import resolvers from 'config/graphql/resolvers';
+import resolvers from './config/graphql/resolvers';
 import cors from 'cors'
 import { graphqlHTTP } from 'express-graphql';
 
