@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.4.0",
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/got": "^9.6.12",
     "@types/node": "^20.14.7",
@@ -25,7 +26,10 @@
     "typescript": "^5.5.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.19.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.9.0",
     "http-status-codes": "^2.3.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",

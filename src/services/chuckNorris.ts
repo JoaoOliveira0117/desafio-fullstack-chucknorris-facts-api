@@ -1,21 +1,6 @@
 import { URLSearchParams } from "url";
 import Fetch from "../config/api/fetch";
 
-type Fact = {
-  categories: string[];
-  created_at: string;
-  icon_url: string;
-  id: string;
-  updated_at: string;
-  url: string;
-  value: string;
-}
-
-type FactsByQueryResponse = {
-  total: number,
-  result: Fact[]
-}
-
 class ChuckNorrisService {
   baseURL = 'https://api.chucknorris.io';
   headers = {
