@@ -5,7 +5,6 @@ import router from './routes/index';
 import swaggerConfig from './config/docs/swagger';
 import error from './middlewares/error';
 import resolvers from 'config/graphql/resolvers';
-import expressPlayground from 'graphql-playground-middleware-express'
 import cors from 'cors'
 import { graphqlHTTP } from 'express-graphql';
 
