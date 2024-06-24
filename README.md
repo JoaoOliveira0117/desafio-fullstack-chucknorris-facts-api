@@ -1,7 +1,7 @@
 ## About
 
 This server is a gateway for the [Chucknorris API](https://api.chucknorris.io)
-it is used alongside with the desafio-fullstack-chucknorris-facts frontend.
+it is used alongside with the [desafio-fullstack-chucknorris-facts frontend](https://github.com/JoaoOliveira0117/desafio-fullstack-chucknorris-facts).
 
 Deploy URL : https://desafio-fullstack-chucknorris-facts-api.onrender.com
 
