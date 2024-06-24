@@ -56,6 +56,6 @@ bun start
 - [x] Use Git;
 - [x] Use Typescript;
 - [x] Use Graphql;
-- [x] Deploy;
+- [x] [Deploy](https://desafio-fullstack-chucknorris-facts-api.onrender.com);
 - [x] Listen to [`The Diner - Billie Eilish` on Spotify](https://open.spotify.com/intl-pt/track/1LLUoftvmTjVNBHZoQyveF?si=1d601d0bac304eb6);
 
